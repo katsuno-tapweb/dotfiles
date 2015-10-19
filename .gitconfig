@@ -1,0 +1,28 @@
+[user]
+	name = katsuno
+	email = katsuno@tapweb.co.jp
+[core]
+	autocrlf = false
+	eol = lf
+
+[alias]
+  st = status
+  l = log --graph --date=iso --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%an %Cred%d %Creset%s %b' --all
+  graph = log --graph --date=short --decorate=short --pretty=format:'%Cgreen%h %Creset%cd %Cblue%cn %Cred%d %Creset%s'
+  lf = log --graph --oneline --decorate=full
+  d = diff --color=always
+  dw = diff --color=always --word-diff
+  sh = show --color=always
+  cm = checkout master
+  cb = checkout -b
+  c = commit
+  pm = pull origin master
+  pum = push origin master
+  f = fetch -ap
+
+[color]
+	ui = true
+[gui]
+	recentrepo = C:/workspace/porc
+[push]
+	default = current
