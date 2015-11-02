@@ -19,6 +19,7 @@
   pm = pull origin master
   pum = push origin master
   f = fetch -ap
+  delete-merged-branches = !git branch --merged | grep -v \\* | xargs -I % git branch -d %
 
 [color]
 	ui = true
